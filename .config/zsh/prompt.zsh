@@ -61,4 +61,4 @@ PROMPT_ARROW="%F{green}%f"
 PROMPT=$'
 %F{blue}%{%} %~ 
 $(exit_code)%{${PROMPT_ARROW}%}  '
-RPROMPT='$(python_env)$(ds_info)$(git_info)%F{cyan}%{%} %*'
+RPROMPT='$(python_env)$(git_info)'

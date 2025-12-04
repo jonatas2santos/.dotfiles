@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 local act = wezterm.action
 
 -- For windows, use pwsh as the default shell
-config.default_prog = { 'pwsh.exe', '-NoLogo' }
+-- config.default_prog = { 'pwsh.exe', '-NoLogo' }
 
 -- Hyprland fix
 config.enable_wayland = false
