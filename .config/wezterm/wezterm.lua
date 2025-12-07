@@ -24,7 +24,7 @@ config.enable_tab_bar = true               -- enable tab bar
 config.hide_tab_bar_if_only_one_tab = true -- hide tab bar automatically
 -- tab bar configuration
 config.window_frame = {
-  font = wezterm.font { family = 'JetBrains Mono', weight = 'Bold' }, -- font tab bar
+  font = wezterm.font { family = 'JetBrains Mono Nerd Font Mono', weight = 'Bold' }, -- font tab bar
   font_size = 8.0,                                                    -- tab bar font size
   -- tab bar colors
   active_titlebar_bg = '#333333',
@@ -38,8 +38,8 @@ config.colors = {
 }
 
 -- Font
-config.font = wezterm.font('JetBrains Mono', { weight = 'Bold', italic = true }) -- fonts of your choice, with bold and italic enabled
-config.font_size = 10                                                            -- font size
+config.font = wezterm.font('JetBrains Mono Nerd Font Mono', { weight = 'Bold', italic = true }) -- fonts of your choice, with bold and italic enabled
+config.font_size = 13.0                                                            -- font size
 
 -- Appearance
 config.color_scheme = 'Oxocarbon Dark (Gogh)' -- set the color scheme
@@ -80,11 +80,11 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = act.PasteFrom 'Clipboard',
   },
-  {
-    key = 'v',
-    mods = 'CTRL|SHIFT',
-    action = act.PasteFrom 'PrimarySelection',
-  },
+  -- {
+  --   key = 'v',
+  --   mods = 'CTRL|SHIFT',
+  --   action = act.PasteFrom 'PrimarySelection',
+  -- },
 
   -- new window
   {
